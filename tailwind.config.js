@@ -1,0 +1,56 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    './index.html',
+    './src/**/*.{js,ts,jsx,tsx}',
+  ],
+  theme: {
+    extend: {
+      colors: {
+        'primarypurple-2': '#e3d1ee',
+        'primarypurple-4': '#a974cb',
+        'primarypurple-5-main': '#8d45ba',
+        'primarypurple-6': '#793BA0',
+        'shadesshades-0': '#ffffff',
+        'shadesshades-1': '#fafbfb',
+        'shadesshades-11': '#7a8699',
+        'shadesshades-14': '#505f79',
+        'shadesshades-15': '#42526d',
+        'shadesshades-16': '#354764',
+        'shadesshades-17': '#243757',
+        'shadesshades-2': '#f3f4f5',
+        'shadesshades-3': '#ebedf0',
+        'shadesshades-4': '#dfe2e6',
+        'shadesshades-5': '#C2C7D0',
+        'shadesshades-6': '#b3b9c4',
+        'shadesshades-9': '#98a1b0',
+        'utilityblueblue-1': '#edf7fb',
+        'utilityblueblue-3': '#b3ddf1',
+        'utilityblueblue-5-main': '#68bce3',
+        'utilityblueblue-6': '#42ABDC',
+        'utilitygreengreen-1': '#eefaf2',
+        'utilitygreengreen-3': '#a7e7b8',
+        'utilitygreengreen-5-main': '#4ecf71',
+        'utilitygreengreen-6': '#34c05a',
+        'utilityredred-3': '#ffb4a8',
+        'utilityyellowyellow-3': '#ffdb8f',
+        'utilityyellowyellow-5-main': '#ffb81e',
+        'utilityyellowyellow-6': '#FAAB00',
+        'font-size-l': '18px',
+        'font-size-m': '16px',
+        'font-size-xl': '20px',
+        'font-size-xxl': '32px',
+        'font-size-xxxl': '36px',
+        'font-size-xxxxl': '40px',
+        'font-size-xxxxxl': '44px',
+        'font-family-dm_sans': 'DM Sans, Helvetica',
+        'font-family-inter': 'Inter, Helvetica',
+      },
+      backgroundImage: {
+        'gradient-to-45': 'linear-gradient(45deg, var(--tw-gradient-stops))',
+      }
+    },
+   
+  },
+  plugins: [],
+}
