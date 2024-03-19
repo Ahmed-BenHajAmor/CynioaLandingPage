@@ -4,14 +4,14 @@ import { Button } from '../subComponents';
 
 function NavBar() {
   return (
-    <nav className='flex p-8 items-center justify-between'>
+    <nav className='flex px-20 py-8 items-center justify-between'>
         <div id="logo"><img className='max-h-10' src="https://cynoia.com/img/logo-6@2x.png" alt="Cynoia" /></div>
 
         <div id="links" >
             <ul className='flex gap-x-6'>
+                <li><OneLink hasSubLinks={false}>Home</OneLink></li>
                 <li><OneLink hasSubLinks={true}>Home</OneLink></li>
-                <li><OneLink hasSubLinks={true}>Home</OneLink></li>
-                <li><OneLink hasSubLinks={true}>Home</OneLink></li>
+                <li><OneLink hasSubLinks={false}>Home</OneLink></li>
                 <li><OneLink hasSubLinks={true}>Home</OneLink></li>
                 <li><OneLink hasSubLinks={true}>Home</OneLink></li>
             </ul>
@@ -19,8 +19,8 @@ function NavBar() {
         </div>
 
         <div id="buttons" className='flex gap-x-6'>
-            <Button bgColor={"white"} txtColor = {"primarypurple-5-main"} shadow={true}>Sign in</Button>
-            <Button bgColor={"primarypurple-5-main"} txtColor = {"white"} shadow={false}>Get started</Button>
+            <Button bgColor={"bg-white"} hasBorder={true} txtColor = {"text-primarypurple-5-main"} shadow={true}>Sign in</Button>
+            <Button bgColor={"bg-primarypurple-5-main"} hasBorder={false} txtColor = {"text-white"} shadow={false}>Get started</Button>
         </div>
     </nav>
   )
